@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.slam.dunk</groupId>
+    <artifactId>java-maven</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>hello</module>
+        <module>slam-plugin</module>
+        <module>slam-web</module>
+        <module>test</module>
+    </modules>
+    <packaging>pom</packaging>
+
+    <name>java-maven</name>
+    <!-- FIXME change it to the project's website -->
+    <url>http://www.example.com</url>
+
+    <!--    <repositories>-->
+    <!--        <repository>-->
+    <!--            <id>nexus</id>-->
+    <!--            <name>Slam Public</name>-->
+    <!--            <url>http://192.168.244.6:8081/repository/maven-public/</url>-->
+    <!--            <releases>-->
+    <!--                <enabled>true</enabled>-->
+    <!--            </releases>-->
+    <!--            <snapshots>-->
+    <!--                <enabled>true</enabled>-->
+    <!--            </snapshots>-->
+    <!--        </repository>-->
+    <!--    </repositories>-->
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <springframework.version>4.0.2.RELEASE</springframework.version>
+        <jackson.version>2.5.0</jackson.version>
+        <slf4j.version>1.7.7</slf4j.version>
+        <jackson.version>2.7.3</jackson.version>
+        <springfox.version>2.5.0</springfox.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.11</version>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>
